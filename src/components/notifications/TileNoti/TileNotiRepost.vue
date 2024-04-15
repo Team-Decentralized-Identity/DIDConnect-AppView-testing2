@@ -17,7 +17,7 @@ const { data: post } = await usePost({ uri: props.noti.record.subject.uri });
 </script>
 
 <template>
-  <article class="tile tile-noti hoverable">
+  <article class="tile tile-noti ">
     <div class="tile-icon">
       <Avatar
         :src="noti.author.avatar"

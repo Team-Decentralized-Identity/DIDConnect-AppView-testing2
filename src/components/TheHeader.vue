@@ -79,23 +79,13 @@ body {
   text-align: left; 
   padding: 0; 
   color: inherit; 
-  background: none; 
   border: none; 
   font-size: 1.5rem; 
   cursor: pointer; 
   left: 1.2%;
+  text-decoration: none;
 }
 
-.logout-button {
-  width: 100%;
-  text-align: left;
-  padding: 0; 
-  color: inherit; 
-  background: none; 
-  border: none; 
-  font-size: 1.5rem; 
-  cursor: pointer; 
-  left: 1.2%;
-  text-decoration: none
-}
+
+
 </style>

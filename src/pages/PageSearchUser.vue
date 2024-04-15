@@ -56,7 +56,19 @@ const submit = async () => {
 </template>
 
 <style scoped>
-.tile:hover {
-  background: #f1f1fc;
+.input-group {
+  position: absolute;
+  top: 0;
+  left: 20;
+  right: -10;
+  width: 50%; /* Set the input group to full width */
+  z-index: 1000; /* Ensure the search bar stays on top of other content */
+ 
 }
+
+
+
+
+
+
 </style>

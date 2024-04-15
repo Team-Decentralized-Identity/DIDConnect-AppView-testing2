@@ -21,7 +21,7 @@ defineProps({
   <TileNotiRepost v-else-if="noti.reason === 'repost'" :noti="noti" />
   <article
     v-else-if="noti.reason === 'mention' || noti.reason === 'reply'"
-    class="tile tile-noti hoverable"
+    class="tile tile-noti "
   >
     <div class="tile-icon">
       <Avatar

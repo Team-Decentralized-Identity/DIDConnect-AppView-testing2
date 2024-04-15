@@ -53,7 +53,7 @@ const goToPost = () => {
 </script>
 
 <template>
-  <div class="tile-post hoverable">
+  <div class="tile-post ">
     <RepostChip
       v-if="Reason.isRepost(feed.reason)"
       :reposted-by="feed.reason.by"
