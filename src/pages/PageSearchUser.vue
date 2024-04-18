@@ -46,14 +46,19 @@ const submit = async () => {
     </div>
   </template>
   <template v-if="state.users.length > 0">
-    <TileUser
+    <div class = "user-container">
+      <TileUser
       v-for="user in state.users"
       :key="user.handle"
       class="py-2 my-2"
       :user="user"
     />
+
+    </div>
+ 
   </template>
 </template>
+
 
 <style scoped>
 .input-group {
@@ -63,8 +68,18 @@ const submit = async () => {
   right: -10;
   width: 50%; /* Set the input group to full width */
   z-index: 1000; /* Ensure the search bar stays on top of other content */
- 
+  padding-bottom: 15px;
 }
+.tile:hover {
+  background: #3e423e;
+}
+
+.user-container {
+  padding-top: 50px;
+}
+
+
+
 
 
 
