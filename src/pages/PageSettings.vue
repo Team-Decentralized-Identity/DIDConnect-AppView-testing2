@@ -18,6 +18,7 @@ const logout = () => {
 </script>
 
 <template>
+  <div class = "">
   <div class="form-group">
     <label class="form-switch">
       <input
@@ -56,6 +57,7 @@ const logout = () => {
       @close="state.showsModalChangeHandle = false"
     />
   </Suspense>
+  </div>
 </template>
 
 <style scoped>
@@ -91,5 +93,9 @@ const logout = () => {
   .btn-link.change-handle:hover .btn-link.change-handle:focus {
   background-image: linear-gradient(to right, #b8d8be, #b8d8be); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.settings {
+  position: absolute;
+  margin-left: 100px;
 }
 </style>

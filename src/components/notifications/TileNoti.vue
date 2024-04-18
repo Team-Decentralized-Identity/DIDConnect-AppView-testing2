@@ -17,6 +17,7 @@ defineProps({
 </script>
 
 <template>
+  <div class ="notifications-container">
   <TileNotiLike v-if="noti.reason === 'like'" :noti="noti" />
   <TileNotiRepost v-else-if="noti.reason === 'repost'" :noti="noti" />
   <article
@@ -42,22 +43,24 @@ defineProps({
       </div>
     </div>
   </article>
+  </div>
 </template>
 
 <style scoped>
 .tile-noti {
   padding: 0.8rem 0.4rem 0.6rem;
   border-bottom: 1px solid #e3e3e3;
+  margin-top: 0; /* Add this line to ensure no top margin */
+}
+.notifications-container {
+  top:0;
+  margin-top: 0;
+}
+body {
+  padding:0;
+  margin:0;
 }
 
-.avatar-reaction {
-  bottom: 14.64%;
-  height: 50%;
-  padding: 0.1rem;
-  position: absolute;
-  right: 14.64%;
-  transform: translate(50%, 50%);
-  width: 50%;
-  z-index: 2;
-}
+
+
 </style>
