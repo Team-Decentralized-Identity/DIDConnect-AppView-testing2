@@ -14,8 +14,26 @@ const { mutate: repost } = useRepostMutation();
 const { mutate: upvote } = useLikeMutation();
 
 const expandedInput = ref(false);
+const heart = ref(false);
+// Initialize likeCount with a fallback to 0 if undefined
+const likeCount = ref(props.feed.post.likeCount ?? 0);
 
 const post = computed(() => props.feed.post);
+const toggleLike = () => {
+  heart.value = !heart.value;
+  const action = heart.value ? 'like' : 'unlike';
+  if (heart.value) {
+    likeCount.value++;
+  } else {
+    likeCount.value = Math.max(likeCount.value - 1, 0);
+  }
+
+  upvote({
+    cid: post.value.cid,
+    uri: post.value.uri,
+    action: action  // Pass the action as part of the request
+  });
+}
 </script>
 
 <template>
@@ -66,3 +84,7 @@ const post = computed(() => props.feed.post);
     </button>
   </div>
 </template>
+<style>
+.bi-heart {
+  background-color: transparent;
+}</style>
