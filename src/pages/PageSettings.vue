@@ -97,5 +97,6 @@ const logout = () => {
 .settings {
   position: absolute;
   margin-left: 100px;
+  align-items: center;
 }
 </style>

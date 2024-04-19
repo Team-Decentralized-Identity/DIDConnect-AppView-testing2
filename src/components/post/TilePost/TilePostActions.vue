@@ -49,7 +49,7 @@ const post = computed(() => props.feed.post);
         })
       "
     >
-      {{ post.upvoteCount }}
+      {{ post.likeCount }}
     </TilePostActionButton>
   </div>
   <div v-if="expandedInput" class="d-flex">

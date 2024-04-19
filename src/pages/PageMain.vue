@@ -1,5 +1,5 @@
 <style>
-  .button-group {
+   .button-group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
 
   .logo {
     display: block; /* Change this to block to allow margin auto to center */
-    margin: 0 auto 60px auto; /* Center horizontally and add margin bottom */
+    margin: 150px auto 60px auto; /* Center horizontally and add margin bottom */
     max-height: 400px; /* Maximum size to maintain aesthetics */
   }
 
@@ -56,8 +56,9 @@
     font-size: 4rem; /* Adjusted font size for logo name */
     font-weight: bold;
     margin-top: -140px; /* Adjust if necessary to align with the logo */
-    color: #b8d8be;
+    color: #fbf5eb;
   }
+
 </style>
 
 <template>
