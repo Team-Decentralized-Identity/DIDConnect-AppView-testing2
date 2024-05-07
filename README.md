@@ -1,3 +1,4 @@
 # DIDConnect
 
-It is a bluesky client
+Testing suite for the didconnect system.
+
